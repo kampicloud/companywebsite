@@ -3294,16 +3294,16 @@ a {
   transition: .3s;
 }
 .cid-tRKSJChQnv form .form-control::-webkit-input-placeholder {
-  color: #232323;
+  color: #afafaf;
 }
 .cid-tRKSJChQnv form .form-control::-moz-placeholder {
-  color: #232323;
+  color: #afafaf;
 }
 .cid-tRKSJChQnv form .form-control:-moz-placeholder {
   color: #232323;
 }
 .cid-tRKSJChQnv form .form-control:-ms-input-placeholder {
-  color: #232323;
+  color: #afafaf;
 }
 .cid-tRKSJChQnv form select {
   color: #232323 !important;
