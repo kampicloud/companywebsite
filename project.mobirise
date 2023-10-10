@@ -64,16 +64,17 @@
     "mbrsiteDomain": "wvmiocit6w",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
-    "sitemapSwitcherAuto": false,
+    "sitemapSwitcherAuto": "on",
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "chatbutton": {},
     "mcShopcart": {
       "checkoutLabelButton": "Subscribe               "
     },
     "lazyLoad": true,
-    "cssOptimize": true
+    "cssOptimize": true,
+    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
+    "chatbutton": false
   },
   "pages": {
     "index.html": {
