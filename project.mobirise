@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "careers.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -56,7 +56,7 @@
         "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 179,
+    "uniqCompNum": 189,
     "versionPublish": "5.6.5",
     "screenshot": "screenshot.png",
     "imageResize": true,
@@ -71,7 +71,9 @@
     "chatbutton": {},
     "mcShopcart": {
       "checkoutLabelButton": "Subscribe               "
-    }
+    },
+    "lazyLoad": true,
+    "cssOptimize": true
   },
   "pages": {
     "index.html": {
@@ -1726,7 +1728,7 @@
         "footer_custom": "",
         "html_before": "",
         "socialSharingUrl": "",
-        "order": 2
+        "order": 3
       },
       "components": [
         {
@@ -2487,7 +2489,7 @@
         "footer_custom": "",
         "html_before": "",
         "socialSharingUrl": "",
-        "order": 1
+        "order": 2
       },
       "components": [
         {
