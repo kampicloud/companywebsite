@@ -37,7 +37,36 @@
   
   
   
-  
+  <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "140811415773490");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 </head>
 <body>
   
@@ -433,7 +462,7 @@
                 <div class="form-wrap">
                     <div class="mbr-form" data-form-type="formoid">
 <!--Formbuilder Form-->
-<form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler mx-auto" data-form-title="Kampi Website Discovery Form"><input type="hidden" name="email" data-form-email="true" value="12xVog/ubzILjuLm7BHYIUqmjHuy9xSOKsjs0xRiutg8wkP1FzcB7WxgevcBm+nwnmmAb7qfDVPXSHVTxV4t/QKm1TctzwO1E6bzqrAvMNcveeprfHaSU0ikso+hyp+7.CsCC67AntHVYLDCADKrFhR2e29D+RxPWRkmhZgbZ6lkm4IJXVRJXafPCzqMogk/xLYppf1A/xuIVE2hyNsjZv3YHX8//Brw56IPF99bcA8NzFbhEmi9TYF4mCOW2xnfw">
+<form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler mx-auto" data-form-title="Kampi Website Discovery Form"><input type="hidden" name="email" data-form-email="true" value="qL6MvzXhtm77x5r8gecF+gBrCsAHv7PeCK5kJOKdL4GXwEarcsTzKGFQiTyfYTm57f59QgVtMRlaEo70oQZEeJx5pR26NuFcfUvlD/+ITDmeZGfprovejk+ZvPp0VGzS.wjv0jSZ9/OnJFEQv8KrivftQpMOW7Th4HZszy7983Qz16xStIi3V9MR1NvhweGX6r2sco2jVVDWxrVgeVavepYL6jGulx7DJ6x9a56+EWYcgnQPPBHC3Am4OtsD03G3N">
 <div class="row">
 <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thank you for sending us a message. We will contact you as soon as we can!</div>
 <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12"> Oops...! some problem! </div>

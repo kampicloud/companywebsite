@@ -35,7 +35,36 @@
   
   
   
-  
+  <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "140811415773490");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 </head>
 <body>
   
@@ -159,11 +188,11 @@
             </div>
             <div class="col-12 col-lg-6">
                 <h4 class="mbr-section-subtitle mb-3 align-center mbr-fonts-style display-5">California</h4>
-                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBQ55g-IgRRgXrd803PTWDTb7kd6aAitNQ&amp;q=1650 Borel Place, Suite 221, San Mateo,94402" allowfullscreen="" loading="lazy" class="lazyload"></iframe></div>
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAtXm0x23nRCgazjDV2Kl3GTHRP411ougQ&amp;q=1650 Borel Place, Suite 221, San Mateo,94402" allowfullscreen="" loading="lazy" class="lazyload"></iframe></div>
             </div>
             <div class="col-12 col-lg-6">
                 <h4 class="mbr-section-subtitle mb-3 mt-5 mt-lg-0 align-center mbr-fonts-style display-5">Philippines</h4>
-                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAtXm0x23nRCgazjDV2Kl3GTHRP411ougQ&amp;q=PSE Tower, 5th Ave. cor. 28th St., Bonifacio Global City, Taguig City 1634," allowfullscreen="" loading="lazy" class="lazyload"></iframe></div>
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB7QWkvlxV39ZsyKvhZRjPGVqlJFvxxNkw&amp;q=PSE Tower, 5th Ave. cor. 28th St., Bonifacio Global City, Taguig City 1634," allowfullscreen="" loading="lazy" class="lazyload"></iframe></div>
             </div>
         </div>
     </div>
