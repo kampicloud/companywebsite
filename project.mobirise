@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "careers.html",
+    "currentPage": "contactus.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -4256,7 +4256,7 @@
       "settings": {
         "title": "Contact Kampi Cloud",
         "meta_descr": "Kampi Cloud is a dynamic and innovative company offering virtual assistant, business support, and telemarketing services. We specialize in providing expert virtual assistance to streamline operations, boost productivity, and drive growth for businesses of all sizes. With our dedicated team and cutting-edge technology, we empower clients to focus on their core objectives while we handle the rest. Let Kampi Cloud be your trusted partner in achieving business excellence.",
-        "header_custom": "<!-- Messenger Chat Plugin Code -->\n    <div id=\"fb-root\"></div>\n\n    <!-- Your Chat Plugin code -->\n    <div id=\"fb-customer-chat\" class=\"fb-customerchat\">\n    </div>\n\n    <script>\n      var chatbox = document.getElementById('fb-customer-chat');\n      chatbox.setAttribute(\"page_id\", \"140811415773490\");\n      chatbox.setAttribute(\"attribution\", \"biz_inbox\");\n    </script>\n\n    <!-- Your SDK code -->\n    <script>\n      window.fbAsyncInit = function() {\n        FB.init({\n          xfbml            : true,\n          version          : 'v18.0'\n        });\n      };\n\n      (function(d, s, id) {\n        var js, fjs = d.getElementsByTagName(s)[0];\n        if (d.getElementById(id)) return;\n        js = d.createElement(s); js.id = id;\n        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';\n        fjs.parentNode.insertBefore(js, fjs);\n      }(document, 'script', 'facebook-jssdk'));\n    </script>",
+        "header_custom": "",
         "footer_custom": "",
         "html_before": "",
         "socialSharingUrl": "",
