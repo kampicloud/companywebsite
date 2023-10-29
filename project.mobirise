@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "careers.html",
+    "currentPage": "getstarted.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -71,10 +71,10 @@
     },
     "lazyLoad": true,
     "cssOptimize": true,
-    "robotsText": "User-agent: *\nDisallow: /cgi-bin\n",
+    "robotsText": "User-agent: *\nDisallow:",
     "global_after_body": "",
     "chatbutton": {},
-    "global_header_custom": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-RG966HQZFC\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-RG966HQZFC');\n</script>",
+    "global_header_custom": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-RG966HQZFC\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-RG966HQZFC');\n</script>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
     "global_footer_custom": "",
     "global_before_html": "",
     "gdpr": false,
