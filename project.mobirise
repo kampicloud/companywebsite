@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "careers.html",
+    "currentPage": "KampicloudVAs.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -56,7 +56,7 @@
         "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 357,
+    "uniqCompNum": 361,
     "versionPublish": "5.6.5",
     "screenshot": "screenshot.png",
     "imageResize": true,
@@ -2211,7 +2211,8 @@
               }
             },
             ".mbr-text, .media-content": {
-              "text-align": "center"
+              "text-align": "center",
+              "color": "#232323"
             }
           },
           "_customHTML": "<section data-bs-version=\"5.1\" class=\"header4\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"borderColor\" value=\"#efefef\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1-2.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row\">\n\n            <div class=\"col-md-12 col-lg-6 align-left\">\n                <h1 class=\"mbr-section-title align-left mbr-white mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>Kampi Cloud Team</b></h1>\n            </div>\n\n\n            <div class=\"col-md-12 col-lg-6 block-border align-left\">\n                <p class=\"mbr-text align-left mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .media-content\">\n                    Join us on a journey of growth and innovation. Explore opportunities to learn, grow, and make a real impact, whether you're an experienced pro or just starting out. We foster an inclusive and collaborative environment where your skills and ideas are highly valued.<br></p>\n\n            </div>\n\n\n\n        </div>\n    </div>\n</section>",
@@ -2295,11 +2296,11 @@
             }
           },
           "_cid": "tUo0qANanh",
+          "_anchor": "features02-9t",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "features02-9t"
+          "_params": {}
         },
         {
           "_name": "features02",
@@ -2367,11 +2368,11 @@
             }
           },
           "_cid": "tUo2KDASb4",
+          "_anchor": "features02-9w",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "features02-9w"
+          "_params": {}
         },
         {
           "_name": "features03",
@@ -2447,11 +2448,11 @@
             }
           },
           "_cid": "tUo200vJPq",
+          "_anchor": "features03-9v",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "features03-9v"
+          "_params": {}
         },
         {
           "alias": false,
@@ -3863,9 +3864,293 @@
           "_params": {}
         },
         {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "overflow": "hidden",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)",
+              "& when (@overlay)": {
+                ".mbr-overlay": {
+                  "background": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            ".item:focus, span:focus": {
+              "outline": "none"
+            },
+            ".item-wrapper": {
+              "position": "relative"
+            },
+            ".slide-content": {
+              "position": "relative",
+              "border-radius": "4px",
+              "background": "transparent",
+              "height": "100%",
+              "display": "flex",
+              "overflow": "visible",
+              "flex-flow": "column nowrap"
+            },
+            ".mbr-section-btn": {
+              "margin-top": "auto !important",
+              "margin-left": "0",
+              "margin-right": "0",
+              "width": "auto",
+              "display": "inline-block"
+            },
+            ".mbr-section-title": {
+              "color": "#14142b",
+              "text-align": "center",
+              "margin-bottom": "24px"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "left"
+            },
+            ".item-title": {
+              "text-align": "left"
+            },
+            ".item-subtitle": {
+              "text-align": "left"
+            },
+            ".embla__slide": {
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "min-width": "33%",
+              "max-width": "596px",
+              "@media (max-width: 768px)": {
+                "min-width": "70%",
+                "max-width": "initial",
+                "margin-left": "1rem !important",
+                "margin-right": "1rem !important"
+              }
+            },
+            "@media (max-width: 900px)": {
+              ".embla__slide": {
+                "min-width": "60%"
+              }
+            },
+            "@media (max-width: 630px)": {
+              ".embla__slide": {
+                "min-width": "375px"
+              }
+            },
+            ".embla__button--next, .embla__button--prev": {
+              "display": "flex"
+            },
+            ".embla__button": {
+              "transition": "background-color 300ms ease, transform 300ms ease, -webkit-transform 300ms ease",
+              "border": "none",
+              "width": "64px",
+              "height": "64px",
+              "font-size": "22px",
+              "border-radius": "50%",
+              "top": "50%",
+              "margin-top": "-1.5rem",
+              "background-color": "#14142b",
+              "color": "#fff",
+              "position": "absolute",
+              "display": "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              "& when not (@arrows)": {
+                "display": "none"
+              },
+              "& when not (@arrowsMobile)": {
+                "@media (max-width: 768px)": {
+                  "display": "none"
+                }
+              },
+              "&:disabled": {
+                "cursor": "default",
+                "display": "none"
+              },
+              "&:hover": {
+                "background": "@infoColor",
+                "color": "#fff",
+                "transform": "scale(1.05)"
+              },
+              "&.embla__button--prev": {
+                "left": "0",
+                "margin-left": "2.5rem"
+              },
+              "&.embla__button--next": {
+                "right": "0",
+                "margin-right": "2.5rem"
+              },
+              "@media (max-width: 767px)": {
+                "top": "auto"
+              }
+            },
+            ".mobi-mbri-arrow-prev": {
+              "margin-right": "5px"
+            },
+            ".mobi-mbri-arrow-next": {
+              "margin-left": "5px"
+            },
+            ".embla": {
+              "position": "relative",
+              "width": "100%"
+            },
+            ".embla__viewport": {
+              "overflow": "visible",
+              "width": "100%"
+            },
+            ".embla__viewport.is-draggable": {
+              "cursor": "grab"
+            },
+            ".embla__viewport.is-dragging": {
+              "cursor": "grabbing"
+            },
+            ".embla__container": {
+              "display": "flex",
+              "user-select": "none",
+              "-webkit-touch-callout": "none",
+              "-khtml-user-select": "none",
+              "-webkit-tap-highlight-color": "transparent"
+            },
+            ".mbr-section-subtitle": {
+              "text-align": "center",
+              "color": "#8c8c95"
+            },
+            ".title-block": {
+              "justify-content": "space-between",
+              "margin-bottom": "32px",
+              "align-items": "center",
+              "padding-bottom": "56px",
+              "max-width": "715px",
+              "margin": "auto"
+            },
+            ".shadow": {
+              "border-radius": "34px",
+              "box-shadow": "0 5px 16px 0 rgba(8, 15, 52, 0.07) !important",
+              "transition": "all 300ms ease, transform 300ms ease, -webkit-transform 300ms ease",
+              "overflow": "visible",
+              "padding": "48px 32px",
+              "border": "1px solid #eff0f6",
+              "background-color": "#ffffff"
+            },
+            ".wrap-img": {
+              "transition": "all 300ms ease !important",
+              "overflow": "hidden",
+              "border-radius": "30px 30px 0 0",
+              "padding": "0px 20px 20px",
+              "display": "flex",
+              "justify-content": "center"
+            },
+            "img": {
+              "width": "100px",
+              "height": "100px",
+              "object-fit": "cover"
+            },
+            ".shadow:hover": {
+              "transform": "translate(0px, -6px)",
+              "box-shadow": "0 10px 20px 0 rgba(8, 15, 52, 0.1) !important",
+              "a[class*=\"text-\"]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-caption), .number, .card-title": {
+                "color": "@infoColor !important"
+              },
+              ".iconfont-wrapper > .mbr-iconfont > span": {
+                "color": "#000000 !important"
+              }
+            },
+            ".card-title": {
+              "margin-bottom": "16px",
+              "color": "#4c4c4c",
+              "transition": "0.35s",
+              "text-align": "left"
+            },
+            ".card-text": {
+              "color": "#232323",
+              "text-align": "center"
+            },
+            "H3": {
+              "color": "#1d1d1f",
+              "text-align": "center"
+            },
+            ".card-wrapper": {
+              "border-radius": "0 0 30px 30px",
+              "background-color": "#ffffff",
+              "padding": "34px 25px 54px 31px"
+            },
+            ".date": {
+              "margin-bottom": "24px",
+              "color": "#8c8c95"
+            },
+            ".link-title": {
+              "display": "inline-block"
+            },
+            ".margin": {
+              "margin-right": "14px"
+            },
+            ".article": {
+              "display": "contents"
+            },
+            ".button-color": {
+              "padding": "1rem 1.5625rem !important",
+              "border-radius": "1000px !important",
+              "display": "inline-block",
+              "line-height": "20px",
+              "background-color": "#eff0f6"
+            },
+            ".link-row": {
+              "align-items": "center"
+            },
+            "@media (max-width: 530px)": {
+              ".card-wrapper": {
+                "border-radius": "0 0 30px 30px"
+              }
+            },
+            "@media (max-width: 480px)": {
+              ".card-wrapper": {
+                "border-radius": "0 0 30px 30px"
+              }
+            },
+            ".iconfont-wrapper": {
+              "text-align": "left",
+              "margin-bottom": "32px",
+              ".mbr-iconfont::before": {
+                "font-size": "50px",
+                "padding": "25px",
+                "border-radius": "50%"
+              }
+            },
+            ".button-align": {
+              "margin-top": "36px",
+              "text-align": "center"
+            },
+            ".btn": {
+              "margin-top": "20px"
+            },
+            ".card-title, .iconfont-wrapper": {
+              "text-align": "center",
+              "color": "#42d1ab"
+            },
+            "a.btn > span": {
+              "margin-left": "0.5rem"
+            },
+            ".mbr-section-title, .button-align": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "slider2",
+          "_sourceTheme": "creatorm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"slider2 mbr-embla\" group=\"Galleries & Sliders\" plugins=\"embla\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" name=\"showTitle\" title=\"Title\" checked>\n        <input type=\"checkbox\" name=\"showSubtitle\" title=\"Subtitle\">\n        <input type=\"checkbox\" name=\"showButton\" title=\"Button\">\n        <header>Carousel</header>\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\">\n        <input type=\"range\" title=\"Interval\" name=\"interval\" min=\"1\" max=\"10\" value=\"5\" step=\"1\" condition=\"autoplay\">\n        <input type=\"checkbox\" title=\"Loop\" name=\"loop\">\n        <input type=\"checkbox\" title=\"Draggable\" name=\"draggable\" checked>\n        <input type=\"checkbox\" name=\"arrows\" title=\"Arrows\" checked>\n        <input type=\"checkbox\" name=\"arrowsMobile\" title=\"Mobile Arrows\" checked condition=\"arrows\">\n        <input type=\"range\" name=\"gap\" title=\"Gap\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" required>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/creatorm5/components/_images/background3.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#42d1ab\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fafafa\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.1\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row title-block\" mbr-if=\"showTitle || showSubtitle\">\n            <div class=\"col-12\">\n                <h4 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title, .button-align\" mbr-if=\"showTitle\">\n                    <b>We Drive Cost Efficiency&nbsp; and Operational Excellence</b></h4>\n                <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\">In today's fiercely competitive business landscape, success hinges not only on innovation and customer satisfaction but also on cost-efficiency. Striking the right balance between cost control and productivity can make or break a company's bottom line. This is where virtual assistants (VAs) emerge as unsung heroes, offering a potent solution to reduce operational expenses while enhancing efficiency. In this article, we delve into how VAs can dramatically cut costs, improve operational efficiency, and free up valuable time.</h3>\n            </div>\n        </div>\n        <div class=\"embla\" data-loop=\"{{loop}}\" data-auto-play=\"{{autoplay}}\" data-auto-play-interval=\"{{interval}}\" data-draggable=\"{{draggable}}\" data-skip-snaps=\"true\" data-align=\"center\" data-contain-scroll=\"trimSnaps\">\n            <div class=\"embla__viewport\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n                <div class=\"embla__container\">\n                    <div class=\"embla__slide slider-image item features-image\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"slide-content\">\n                            <div class=\"shadow item-wrapper\">\n                                <div class=\"wrap-img item-img\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/mbr-200x200.png\" data-slide-to=\"0\" data-bs-slide-to=\"0\" alt>\n                                </div>\n                                <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Office Overhead Elimination</b></h5>\n                                <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">One of the most immediate cost savings comes from the elimination of office-related expenses. With VAs working remotely, businesses can wave goodbye to expenditures like rent, utilities, and office supplies.</h5>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"embla__slide slider-image item features-image\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"slide-content\">\n                            <div class=\"shadow item-wrapper\">\n                                <div class=\"wrap-img item-img\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/mbr-1-200x250.png\" data-slide-to=\"1\" data-bs-slide-to=\"1\" alt>\n                                </div>\n                                <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>HR Expense Reduction</b></h5>\n                                <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">Hiring employees can be a costly, from advertising job openings to conducting interviews and onboarding. VAs enter the scene as experienced professionals, bypassing the need for costly recruitment processes.</h5>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"embla__slide slider-image item features-image\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"slide-content\">\n                            <div class=\"shadow item-wrapper\">\n                                <div class=\"wrap-img item-img\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/mbr-1-200x200.png\" data-slide-to=\"2\" data-bs-slide-to=\"2\" alt>\n                                </div>\n                                <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Administrative Efficiency</b></h5>\n                                <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">VAs excel at handling administrative tasks such as data entry, appointment scheduling, and email management. By outsourcing these duties, you free up your core team to focus on revenue-generating activities.</h5>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"embla__slide slider-image item features-image\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"slide-content\">\n                            <div class=\"shadow item-wrapper\">\n                                <div class=\"wrap-img item-img\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/mbr-2-200x200.png\" data-slide-to=\"3\" data-bs-slide-to=\"3\" alt>\n                                </div>\n                                <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Global Talent Access</b></h5>\n                                <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">VAs provide access to a diverse pool of global talents. This means you can tap into highly skilled professionals without the hefty price tags, offering both quality work and significant financial savings.</h5>\n                            </div>\n                        </div>\n                    </div><div class=\"embla__slide slider-image item features-image\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"slide-content\">\n                            <div class=\"shadow item-wrapper\">\n                                <div class=\"wrap-img item-img\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/mbr-200x150.png\" data-slide-to=\"4\" data-bs-slide-to=\"4\" alt>\n                                </div>\n                                <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Flexibility and Scalability</b></h5>\n                                <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">VAs grant businesses the flexibility to adapt their workforce to changing needs. Whether you need extra support during busy seasons or want to downsize during slower periods, VAs offer cost-effective scalability.</h5>\n                            </div>\n                        </div>\n                    </div><div class=\"embla__slide slider-image item features-image\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"slide-content\">\n                            <div class=\"shadow item-wrapper\">\n                                <div class=\"wrap-img item-img\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/mbr-3-200x200.png\" data-slide-to=\"6\" data-bs-slide-to=\"6\" alt>\n                                </div>\n                                <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Focus on the Business</b></h5>\n                                <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">With VAs taking care of routine tasks, your team can channel their energy into strategic initiatives, innovation, and client interactions, which are vital for business growth. We ease the workload to promote a healthier work-life balance.</h5>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <button class=\"embla__button embla__button--prev\">\n                <span class=\"mobi-mbri mobi-mbri-arrow-prev mbr-iconfont\" aria-hidden=\"true\"></span>\n                <span class=\"sr-only visually-hidden visually-hidden\">Previous</span>\n            </button>\n            <button class=\"embla__button embla__button--next\">\n                <span class=\"mobi-mbri mobi-mbri-arrow-next mbr-iconfont\" aria-hidden=\"true\"></span>\n                <span class=\"sr-only visually-hidden visually-hidden\">Next</span>\n            </button>\n        </div>\n        <div class=\"button-align\">\n            <div class=\"mbr-section-btn\" mbr-if=\"showButton\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href data-app-placeholder=\"Type Text\">Subscribe</a></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tUoo8H9SCt",
+          "_anchor": "slider2-a0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
           "_name": "article02",
           "_sourceTheme": "smartm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article02 smartm5\" group=\"Article\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Buttons BG\" value=\"#ffffff\" name=\"buttonsBg\" condition=\"showButtons\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/smartm5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/smartm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"title-wrapper\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .buttons-wrapper\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>Unlock Your Business Potential with Kampi Cloud Virtual Assistants.</b></h2>\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\"></h3>\n                    <div class=\"buttons-wrapper\">\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-secondary\" href=\"contactus.html\" data-app-placeholder=\"Type Text\">Contact us</a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article02 smartm5\" group=\"Article\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"8\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Buttons BG\" value=\"#ffffff\" name=\"buttonsBg\" condition=\"showButtons\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/smartm5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/smartm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"title-wrapper\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .buttons-wrapper\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>Unlock Your Business Potential with Kampi Cloud Virtual Assistants.</b></h2>\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\"></h3>\n                    <div class=\"buttons-wrapper\">\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-secondary\" href=\"contactus.html\" data-app-placeholder=\"Type Text\">Contact us</a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_styles": {
             "& when not (@fullScreen)": {
               "padding-top": "(@paddingTop * 1rem)",
