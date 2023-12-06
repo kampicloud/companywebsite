@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Site-12-05_1255",
-    "currentPage": "index.html",
+    "currentPage": "icash-privacypolicy.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -59,7 +59,7 @@
     "screenshot": "screenshot.png",
     "chatbutton": {},
     "favicon": "@PROJECT_PATH@/assets/images/icash-logo-mobile.svg",
-    "mbrsiteDomain": "gjnazgxewd",
+    "mbrsiteDomain": "fqi3yokai9",
     "cssOptimize": true,
     "lazyLoad": true,
     "robotsSwitcher": false,
@@ -78,7 +78,7 @@
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
-        "meta_image": "@PROJECT_PATH@/assets/images/icash-logo-mobile.svg"
+        "meta_image": "@PROJECT_PATH@/assets/images/icash-logo%20blue-1256x1256.png"
       },
       "components": [
         {
@@ -1382,7 +1382,8 @@
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
-        "order": 2
+        "order": 2,
+        "meta_image": "@PROJECT_PATH@/assets/images/icash-logo%20blue-1256x1256.png"
       },
       "components": [
         {
@@ -2145,7 +2146,8 @@
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
-        "order": 1
+        "order": 1,
+        "meta_image": "@PROJECT_PATH@/assets/images/icash-logo%20blue-1256x1256.png"
       },
       "components": [
         {
@@ -4273,7 +4275,7 @@
         "footer_custom": "",
         "html_before": "",
         "order": 4,
-        "meta_image": "@PROJECT_PATH@/assets/images/icash-logo-mobile.svg"
+        "meta_image": "@PROJECT_PATH@/assets/images/icash-logo%20blue-1256x1256.png"
       },
       "components": [
         {
